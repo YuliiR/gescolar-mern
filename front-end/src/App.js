@@ -1,6 +1,5 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
 import AddUpdate from './pages/AddUpdate';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -9,6 +8,7 @@ import Sidebar from './pages/Sidebar';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 import View from './pages/View';
+import Header from './components/Header';
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Sidebar />
-        <Navbar />
+        <Header />
         <ToastContainer position='top-center' />
         <Routes>
           {/* <Route exact path='/' element={<Authentication />} /> */}
